@@ -1,24 +1,12 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Examples from the rails book, some of which I am having to fix for the later versions.  The book was written for Rails 4.
 
-Things you may want to cover:
+```
+dude1$ ruby -v
+ruby 2.3.1p112 (2016-04-26 revision 54768) [x86_64-darwin15]
+dude1$ rails -v
+Rails 5.0.1
+```
 
-* Ruby version
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
