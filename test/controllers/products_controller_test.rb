@@ -27,8 +27,6 @@ class ProductsControllerTest < ActionController::TestCase
     }
   end
 
-
-
   test "should get index" do
     get :index
     assert_response :success
@@ -49,9 +47,6 @@ class ProductsControllerTest < ActionController::TestCase
   end
 
   # ...
-
-
-
 
   test "should show product" do
     get :show, params: {:id => @product.to_param }
