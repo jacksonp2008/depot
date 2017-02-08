@@ -46,10 +46,14 @@ class LineItemsController < ApplicationController
     product = Product.find(params[:product_id])
     @line_item = @cart.add_product(product.id)
 
+logger.debug "DEBUG create line item =====> #{@line_item.id}"
+
     respond_to do |format|
+
       if @line_item.save
         format.html { redirect_to(store_url) }
-        format.js   { @current_item = @line_item }
+        #format.js   { @current_item = @line_item }
+
         format.xml  { render :xml => @line_item,
           :status => :created, :location => @line_item }
       else
